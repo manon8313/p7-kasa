@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from './pages/home'
 import About from './pages/about'
 
+
 // On configure l'application en elle même (la fonction App)
 export default function App() {
   return (
