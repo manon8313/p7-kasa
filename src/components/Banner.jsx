@@ -1,14 +1,19 @@
-import React from "react";
+import React from 'react'
+import BannerHome from '../../assets/bannerHome.png'
+import LocationList from '../../components/LocationList';
+import './Home.css'
 
 
-function Banniere({ image, texte }) {
+
+export default function Home() {
+
   return (
-    <div className="banner">
-      <img className="banner__img" src={image} alt="Bannière" />
-      <div className="banner__sombre"></div>
-      <span className="banner__txt">{texte}</span>
-    </div>
-  );
+    <main className="main-home">
+        <article className ="banner">
+          <img className="banner_img" src={BannerHome} alt="Chez vous, partout et ailleurs" />
+          <h2 className="banner_title">Chez vous, partout et ailleurs</h2>
+        </article>
+        <LocationList></LocationList>
+    </main>
+  )
 }
-
-export default Banniere;
