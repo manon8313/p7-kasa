@@ -1,13 +1,18 @@
-import { Link } from "react-router-dom";
+import React from 'react';
+import './Home.css';
+import bannerImage from '../assets/BannerHome.png';
 
-
-// Première lettre d'un composant ou d'une page en majuscule
-export default function Home() {
-   return (
-      <>
-         <h1 className="maClasse">Page Accueil</h1>
-        <Link to="/about">About</Link>
-      </>
-      
-   )
+export default function Banner() {
+  return (
+    <main className="main-home">
+      <article className="banner">
+        <img
+          className="banner_img"
+          src={bannerImage}
+          alt="Chez vous, partout et ailleurs"
+        />
+        <h2 className="banner_title">Chez vous, partout et ailleurs</h2>
+      </article>
+    </main>
+  );
 }
