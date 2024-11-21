@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom'
-import React from 'react'
-import logo from '../../assets/LOGO.png'
-import './header.css'
+import { Link, useLocation } from 'react-router-dom';
+import React from 'react';
+import logo from '../../assets/LOGO.png';
+import './header.css';
 
 
 
-function Header() {
+export default function Header() {
+    const location = useLocation();
   
 return (
   <header className='header_container'>
@@ -23,4 +24,3 @@ return (
   </header>
 )
 }
-export default Header
