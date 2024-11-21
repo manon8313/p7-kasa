@@ -1,11 +1,11 @@
-import LogoWhite form '../../LogoWhite.png';  
+import LogoWhite from '../../LogoWhite.png';
 import './footer.css';
 
 
 
 
 
-export default function footer() {
+export default function Footer() {
 
     return (
         <footer className='footer'>
